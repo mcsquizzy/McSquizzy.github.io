@@ -46,7 +46,7 @@ function visitTime() {
 	} else {
 	  // increment the counter
 	  visits = parseInt(visits) + 1;
-	  window.alert(	"Last visited: " + currentTime + ". Current time: " + currentTime.getHours() + ":" + currentTime.getMinutes());
+	  window.alert("Visited time: " + currentTime.getHours() + ":" + currentTime.getMinutes());
 	}
 	// set the new cookie
 	setCookie("counter", visits, currentTime);
