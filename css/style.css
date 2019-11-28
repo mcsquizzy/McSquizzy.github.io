@@ -1,0 +1,111 @@
+﻿/* CSS */
+body {
+	margin: 0;
+	font-family: Tahoma, Verdana, sans-serif;
+}
+
+@media only screen and (max-width: 40em) {
+  	body {
+   		background-color: lightblue;
+   		font-size: 1em;
+  	}
+}
+
+/* topnavbar container */
+.topnav {
+ 	list-style-type: none;
+ 	margin: 0;
+ 	padding: 0;
+ 	overflow: hidden;
+}
+
+/* Style the topnavbar links */
+.topnav a {
+  	float: left;
+  	display: block;
+  	color: black;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+}
+
+/* navbar media queries */
+@media screen and (max-width: 30em) {
+	.topnav, .content,
+	.topnav a {float: none;}
+}
+
+/* Container for flexboxes */
+.flex-container1 {
+  	display: flex;
+  	flex-wrap: wrap;
+}
+
+/* Create six equal columns */
+.column {
+	background-color: white;
+  	flex: 25%;
+  	padding: 1.5em;
+  	height: 10em;
+}
+
+/* On screens that are 55em wide or less, go from three columns to two columns */
+@media screen and (max-width: 55em) {
+  .column {
+    flex: 30%;
+  }
+}
+
+/* On screens that are 40em wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 40em) {
+  .flex-container1 {
+  	flex-direction: column;
+  }
+}
+
+.flex-container2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: white;
+}
+
+.flex-container2 > div {
+	background-color: blue;
+	margin: 1.5em;
+	width: 15em;
+	height: 20em;
+	padding: 2.5em;
+	box-shadow: 0 0 1em  black;
+	text-align: center;
+}
+
+/* On screens that are 40em wide or less, make the boxes stack on top of each other instead of next to each other */
+@media screen and (max-width: 40em) {
+  .flex-container2 {
+  	flex-direction: column;
+  }
+}
+
+
+
+.content {
+	background-color: lightblue;
+	padding: 0.5em;
+}
+
+
+/* links */
+a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+  	padding: 0.5em;
+}
+
+a:hover {
+	color: #FF0066; 
+	text-decoration:underline;
+	border: none;
+}
+
