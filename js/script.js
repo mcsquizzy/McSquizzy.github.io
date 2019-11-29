@@ -1,15 +1,11 @@
 
-function myFunction() {
- document.getElementById("demo").innerHTML = "Paragraph changed.";
-}
-
 /*
-	cookie expires in one day
-	24 hours in a day
-	60 minutes in an hour
-	60 seconds in a minute
-	1000 milliseconds in a second
-	*/
+cookie expires in one day
+24 hours in a day
+60 minutes in an hour
+60 seconds in a minute
+1000 milliseconds in a second
+*/
 
 function setCookie(cname,cvalue,exdays) {
   var d = new Date();
@@ -46,9 +42,22 @@ function visitTime() {
 	} else {
 	  // increment the counter
 	  visits = parseInt(visits) + 1;
-	  window.alert("Visited time: " + currentTime.getHours() + ":" + currentTime.getMinutes());
+	  //window.alert("Visited time: " + currentTime.getHours() + ":" + currentTime.getMinutes());
 	}
 	// set the new cookie
 	setCookie("counter", visits, currentTime);
 
 }
+
+/*
+animated canvas element
+*/
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.beginPath();
+ctx.arc(95,50,40,0,2*Math.PI);
+ctx.stroke();
+
+
+
+
