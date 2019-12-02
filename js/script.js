@@ -52,12 +52,27 @@ function visitTime() {
 /*
 animated canvas element
 */
-var canvas = document.getElementById("myCanvas");
-var ctx = canvas.getContext("2d");
-ctx.beginPath();
-ctx.arc(95,50,40,0,2*Math.PI);
-ctx.stroke();
+function draw() {
+  var canvas = document.getElementById("myCanvas");
+  var context = canvas.getContext("2d");
+  animate(context, 0, 0);
+}
 
-
-
-
+function animate(context, x, y) {
+  setTimeout ( function() {
+    //clear old draw
+    context.clearRect(0,0,3500,100);
+    context.beginPath();
+    context.font = "2em Verdana, sans-serif"
+    context.fillText("open source first", x, y);
+    //speed of animated text
+    x = x + 2;
+    y = 50;
+    //width of animation
+    if (x>2500) {
+      x = 0
+    };
+    self.animate(context, x, y);
+  },8
+  );
+}
