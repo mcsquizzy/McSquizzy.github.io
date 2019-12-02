@@ -4,11 +4,9 @@ body {
 	font-family: Tahoma, Verdana, sans-serif;
 }
 
-@media only screen and (max-width: 40em) {
-  	body {
-   		background-color: lightblue;
-   		font-size: 1em;
-  	}
+footer {
+		margin: 0;
+		font-family: Tahoma, Verdana, sans-serif;
 }
 
 /* topnavbar container */
@@ -25,7 +23,7 @@ body {
   	display: block;
   	color: black;
   	text-align: center;
-  	padding: 14px 16px;
+  	padding: 0.8em 1em;
   	text-decoration: none;
 }
 
@@ -35,7 +33,7 @@ body {
 	.topnav a {float: none;}
 }
 
-/* Container for flexboxes */
+/* Container for columns */
 .flex-container1 {
   	display: flex;
   	flex-wrap: wrap;
@@ -63,6 +61,7 @@ body {
   }
 }
 
+/* Container for boxes */
 .flex-container2 {
 	display: flex;
 	flex-wrap: wrap;
@@ -87,13 +86,22 @@ body {
   }
 }
 
-
+/* Container for canvas */
+.flex-container3 {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: white;
+}
 
 .content {
 	background-color: lightblue;
 	padding: 0.5em;
 }
 
+.footer {
+	background-color: white;
+	padding: 0.5em;
+}
 
 /* links */
 a {
@@ -104,8 +112,7 @@ a {
 }
 
 a:hover {
-	color: #FF0066; 
+	color: #FF0066;
 	text-decoration:underline;
 	border: none;
 }
-
