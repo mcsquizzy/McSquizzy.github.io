@@ -65,13 +65,18 @@ body {
 }
 
 .flex-container2 > div {
-	background-color: blue;
+	background-color: white;
 	margin: 1.5em;
 	width: 15em;
 	height: 20em;
 	padding: 2.5em;
-	box-shadow: 0 0 1em  black;
+	box-shadow: 0 0 1em gray;
 	text-align: center;
+}
+
+/* mouse over effect for boxes */
+.flex-container2 > div:hover {
+	box-shadow: 0 0 2em gray;
 }
 
 /* Container for canvas */
