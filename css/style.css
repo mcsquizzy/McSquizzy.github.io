@@ -14,12 +14,12 @@ body {
 
 /* Style the topnavbar links */
 .topnav a {
-  	float: left;
-  	display: block;
-  	color: black;
-  	text-align: center;
-  	padding: 0.8em 1em;
-  	text-decoration: none;
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 0.8em 1em;
+  text-decoration: none;
 }
 
 /* navbar media queries */
@@ -91,16 +91,15 @@ body {
 	padding: 0.5em;
 }
 
-/* links */
+/* hyperlinks */
 a {
 	display: block;
 	text-align: center;
 	text-decoration: none;
-  	padding: 0.5em;
+  padding: 0.5em;
 }
 
 a:hover {
 	color: #FF0066;
-	text-decoration:underline;
 	border: none;
 }
