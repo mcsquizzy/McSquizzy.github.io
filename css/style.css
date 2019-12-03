@@ -30,16 +30,16 @@ body {
 
 /* Container for columns */
 .flex-container1 {
-  	display: flex;
-  	flex-wrap: wrap;
+	display: flex;
+  flex-wrap: wrap;
 }
 
 /* Create six equal columns */
 .column {
 	background-color: white;
-  	flex: 25%;
-  	padding: 1.5em;
-  	height: 10em;
+  flex: 25%;
+  padding: 1.5em;
+  height: 10em;
 }
 
 /* On screens that are 55em wide or less, go from three columns to two columns */
@@ -72,13 +72,6 @@ body {
 	padding: 2.5em;
 	box-shadow: 0 0 1em  black;
 	text-align: center;
-}
-
-/* On screens that are 40em wide or less, make the boxes stack on top of each other instead of next to each other */
-@media screen and (max-width: 40em) {
-  .flex-container2 {
-  	flex-direction: column;
-  }
 }
 
 /* Container for canvas */
