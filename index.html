@@ -3,13 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="author" content="Lukas Mettler">
-
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title>Testat WebTec</title>
 
 	<link rel="stylesheet" href="css/style.css">
-
 	<script src="js/script.js"></script>
 
 </head>
@@ -19,76 +17,89 @@
 	<div class="topnav">
   		<a href="#top">Home</a>
   		<a href="#columns">First part</a>
-  		<a href="#boxes">Second Part</a>
+  		<a href="#boxes">Second part</a>
   		<a href="#canvas">Canvas Element</a>
 	</div>
 
 	<div class="content">
 		<h1>This is a Heading</h1>
-		<h2 id="columns">First part blabla</h2>
 
 		<p>This is a paragraph.</p>
 
-		<div class="flex-container1">
+		<div id="columns">
+			<h2>First part blabla</h2>
 
-			<div class="column">
-				<h3>column1</h3>
-				<p>blasblblbdsfhsdfgsdfgsl</p>
-			</div>
+			<div class="flex-container1">
+				<div class="column">
+					<h3>column1</h3>
+					<p>blasblblbdsfhsdfgsdfgsl</p>
+				</div>
 
-			<div class="column">
-				<h3>column2</h3>
-				<p>blasblbsdfalbsl</p>
-			</div>
+				<div class="column">
+					<h3>column2</h3>
+					<p>blasblbsdfalbsl</p>
+				</div>
 
-			<div class="column">
-				<h3>column3</h3>
-				<p>blasblbasdfasdlbsl</p>
-			</div>
+				<div class="column">
+					<h3>column3</h3>
+					<p>blasblbasdfasdlbsl</p>
+				</div>
 
-			<div class="column">
-				<h3>column4</h3>
-				<p>blasblbasdalbsl</p>
-			</div>
+				<div class="column">
+					<h3>column4</h3>
+					<p>blasblbasdalbsl</p>
+				</div>
 
-			<div class="column">
-				<h3>column5</h3>
-				<p>blasblbasdalbsl</p>
-			</div>
+				<div class="column">
+					<h3>column5</h3>
+					<p>blasblbasdalbsl</p>
+				</div>
 
-			<div class="column">
-				<h3>column6</h3>
-				<p>blasblbasdalbsl</p>
+				<div class="column">
+					<h3>column6</h3>
+					<p>blasblbasdalbsl</p>
+				</div>
 			</div>
 		</div>
 
-		<h2 id="boxes">Second part blabla</h2>
+		<div id="boxes">
+			<h2>Second part blabla</h2>
 
-		<div class="flex-container2">
-			<div>
-				<h3>Box 1</h3>
-				<p>aölalksdjföalskdjf</p>
+			<div class="flex-container2">
+				<div>
+					<h3>Box 1</h3>
+					<p>aölalksdjföalskdjf</p>
+				</div>
+				<div>
+					<h3>Box 2</h3>
+					<p>aölskdjfaölskdjföalksdjföalskdjf</p>
+				</div>
+				<div>
+					<h3>Box 3</h3>
+					<p>aölskdjfaölskdjföalksdjföalskdjf</p>
+				</div>
 			</div>
-			<div>
-				<h3>Box 2</h3>
-				<p>aölskdjfaölskdjföalksdjföalskdjf</p>
-			</div>
-			<div>
-				<h3>Box 3</h3>
-				<p>aölskdjfaölskdjföalksdjföalskdjf</p>
-			</div>
-
 		</div>
 
-		<h2 id="canvas">Canvas Element</h2>
-		
-		<div class="flex-container3">
-			<canvas id="myCanvas" width="2500" height="100">
-				Your browser does not support the canvas element.
-				<script>
-					draw();
-				</script>
-			</canvas>
+		<div id="canvas">
+			<h2>Canvas Element</h2>
+
+			<div class="flex-container3">
+				<canvas id="myCanvas" width="2500" height="100">
+					Your browser does not support the canvas element.
+					<script>
+						draw();
+					</script>
+				</canvas>
+			</div>
+		</div>
+
+		<div id=ajax>
+			<h2>Get Server Time with Ajax</h2>
+			<input type="button" value="Get Server Time" onclick="timer_function();"></input>
+			<script>
+				
+			</script>
 		</div>
 
 	</div>
