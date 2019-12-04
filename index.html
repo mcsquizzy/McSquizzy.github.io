@@ -97,23 +97,23 @@
 		<div>
 			<h2>Get Server Time with Ajax</h2>
 			<div id="demo">
-<h1>The XMLHttpRequest Object</h1>
-<button type="button" onclick="loadDoc()">Change Content</button>
-</div>
+				<button type="button" onclick="loadDoc()">Request data</button>
 
-<script>
-function loadDoc() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("demo").innerHTML =
-      this.responseText;
-    }
-  };
-  xhttp.open("GET", "ajax-server-clock.php", true);
-  xhttp.send();
-}
-</script>
+				<p id="demo"></p>
+
+
+				<script>
+				function loadDoc() {
+				  var xhttp = new XMLHttpRequest();
+				  xhttp.onreadystatechange = function() {
+				    if (this.readyState == 4 && this.status == 200) {
+				      document.getElementById("demo").innerHTML = this.responseText;
+				    }
+				  };
+				  xhttp.open("GET", "ajax-server-time.php", true);
+				  xhttp.send();
+				}
+				</script>
 		</div>
 
 	</div>
