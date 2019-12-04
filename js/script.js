@@ -76,3 +76,7 @@ function animate(context, x, y) {
   },8
   );
 }
+
+/*
+Get request with Ajax
+*/
