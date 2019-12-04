@@ -15,10 +15,10 @@
 <body onload="visitTime()">
 
 	<div class="topnav">
-  		<a href="#top">Home</a>
   		<a href="#columns">First part</a>
   		<a href="#boxes">Second part</a>
   		<a href="#canvas">Canvas Element</a>
+			<a href="#ajax">Ajax Request</a>
 	</div>
 
 	<div class="content">
@@ -32,32 +32,32 @@
 			<div class="flex-container1">
 				<div class="column">
 					<h3>column1</h3>
-					<p>blasblblbdsfhsdfgsdfgsl</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et magnis dis parturient montes nascetur ridiculus mus mauris. Pretium fusce id velit ut tortor pretium viverra suspendisse potenti. Vitae turpis massa sed elementum tempus egestas sed sed risus.</p>
 				</div>
 
 				<div class="column">
 					<h3>column2</h3>
-					<p>blasblbsdfalbsl</p>
+					<p>Bibendum arcu vitae elementum curabitur vitae nunc. Euismod elementum nisi quis eleifend quam adipiscing vitae. Eu nisl nunc mi ipsum faucibus vitae aliquet nec. Adipiscing elit ut aliquam purus sit. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Amet luctus venenatis lectus magna fringilla urna.</p>
 				</div>
 
 				<div class="column">
 					<h3>column3</h3>
-					<p>blasblbasdfasdlbsl</p>
+					<p>Erat imperdiet sed euismod nisi porta lorem mollis aliquam. Quis eleifend quam adipiscing vitae. Risus sed vulputate odio ut. Placerat vestibulum lectus mauris ultrices eros in cursus turpis. Fringilla ut morbi tincidunt augue interdum velit euismod. Phasellus faucibus scelerisque eleifend donec. Dignissim convallis aenean et tortor at risus viverra.</p>
 				</div>
 
 				<div class="column">
 					<h3>column4</h3>
-					<p>blasblbasdalbsl</p>
+					<p>Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Sem fringilla ut morbi tincidunt augue. Tempor nec feugiat nisl pretium fusce id velit ut tortor. Pharetra magna ac placerat vestibulum lectus mauris. Velit dignissim sodales ut eu. At auctor urna nunc id cursus metus. Fames ac turpis egestas maecenas pharetra convallis posuere morbi.</p>
 				</div>
 
 				<div class="column">
 					<h3>column5</h3>
-					<p>blasblbasdalbsl</p>
+					<p>Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit amet. Enim nunc faucibus a pellentesque sit amet porttitor. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Aliquet risus feugiat in ante metus dictum at tempor commodo. Placerat orci nulla pellentesque dignissim enim sit amet. Ac felis donec et odio.</p>
 				</div>
 
 				<div class="column">
 					<h3>column6</h3>
-					<p>blasblbasdalbsl</p>
+					<p>Quis varius quam quisque id. Lacinia quis vel eros donec ac odio tempor. Blandit volutpat maecenas volutpat blandit. Aliquet nibh praesent tristique magna sit amet purus gravida. Ut diam quam nulla porttitor massa id neque. Purus in mollis nunc sed id. Elementum sagittis vitae et leo. Pretium quam vulputate dignissim suspendisse.</p>
 				</div>
 			</div>
 		</div>
@@ -68,15 +68,18 @@
 			<div class="flex-container2">
 				<div>
 					<h3>Box 1</h3>
-					<p>aölalksdjföalskdjf</p>
+					<img src="images/html5.png" alt="HTML5 Icon" style="width:9em;height:9em;">
+					<p>HTML is the standard markup language for Web pages.</p>
 				</div>
 				<div>
 					<h3>Box 2</h3>
-					<p>aölskdjfaölskdjföalksdjföalskdjf</p>
+					<img src="images/css3.png" alt="CSS3 Icon" style="width:6.5em;height:9em;">
+					<p>CSS is a language that describes the style of an HTML document.</p>
 				</div>
 				<div>
 					<h3>Box 3</h3>
-					<p>aölskdjfaölskdjföalksdjföalskdjf</p>
+					<img src="images/js5.png" alt="JavaScript Icon" style="width:6.5em;height:9em;">
+					<p>JavaScript is the programming language of HTML and the Web.</p>
 				</div>
 			</div>
 		</div>
@@ -85,7 +88,7 @@
 			<h2>Canvas Element</h2>
 
 			<div class="flex-container3">
-				<canvas id="myCanvas" width="2500" height="100">
+				<canvas id="myCanvas" width="2500" height="80">
 					Your browser does not support the canvas element.
 					<script>
 						draw();
@@ -94,15 +97,11 @@
 			</div>
 		</div>
 
-		<div>
-			<h2>Get Server Time with Ajax</h2>
-				<button type="button" onclick="loadDoc()">Request data</button>
+		<div id="ajax">
+			<h2>Get request with Ajax</h2>
 
-				<p id="demo"></p>
-				<p>ASP can output plain text:</p>
-
-				<%response.write("Hello World!")%>
-
+			<button type="button" onclick="getServerDoc()">Request data</button>
+			<p id="demo"></p>
 		</div>
 	</div>
 
