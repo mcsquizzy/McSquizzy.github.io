@@ -94,12 +94,24 @@
 			</div>
 		</div>
 
-		<div id=ajax>
+		<div>
 			<h2>Get Server Time with Ajax</h2>
-			<input type="button" value="Get Server Time" onclick="timer_function();"></input>
-			<script>
-				
-			</script>
+				<button type="button" onclick="loadDoc()">Request data</button>
+				<p id="demo"></p>
+
+				<script>
+				function loadDoc() {
+				  var xhttp = new XMLHttpRequest();
+				  xhttp.onreadystatechange = function() {
+				    if (this.readyState == 4 && this.status == 200) {
+				      document.getElementById("demo").innerHTML = this.responseText;
+				    }
+				  };
+				  xhttp.open("GET", "ajax_info.txt", true);
+				  xhttp.send();
+				}
+				</script>
+
 		</div>
 
 	</div>
