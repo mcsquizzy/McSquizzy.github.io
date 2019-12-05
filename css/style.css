@@ -76,7 +76,7 @@ body {
 	padding: 2.5em;
 	box-shadow: 0 0 1em black;
 	text-align: center;
-	overflow: auto;
+	overflow: hidden;
 }
 
 /* mouse over effect for boxes */
