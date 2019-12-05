@@ -17,7 +17,6 @@ body {
 .topnav a {
   float: left;
   display: block;
-  color: black;
   text-align: center;
   padding: 0.8em 1em;
   text-decoration: none;
@@ -69,9 +68,10 @@ body {
 
 .flex-container2 > div {
 	background-color: #393939;
-	margin: 1.5em;
+	border-radius: 0.3em;
 	width: 15em;
 	height: 20em;
+	margin: 1.5em;
 	padding: 2.5em;
 	box-shadow: 0 0 1em black;
 	text-align: center;
@@ -118,6 +118,7 @@ body {
 
 /* hyperlinks */
 a {
+	color: Gold;
 	display: block;
 	text-align: center;
 	text-decoration: none;
