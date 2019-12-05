@@ -84,6 +84,14 @@ body {
 	box-shadow: 0 0 2em black;
 }
 
+/* On screens that */
+@media screen and (max-width: 25em) {
+  .flex-container2 > div {
+  	padding: 0.5em;
+		overflow: auto;
+  }
+}
+
 /* Container for canvas */
 .flex-container3 {
 	display: flex;
