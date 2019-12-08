@@ -46,7 +46,6 @@ function visitTime() {
 	}
 	// set the new cookie
 	setCookie("counter", visits, currentTime);
-
 }
 
 /*
