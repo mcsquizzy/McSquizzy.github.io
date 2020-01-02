@@ -110,13 +110,6 @@ body {
 	padding: 2em;
 }
 
-.footer {
-	background-color: white;
-	padding: 0.5em;
-	padding-left: 2em;
-	padding-right: 2em;
-}
-
 #columns {
 	margin-top: 3.5em;
 }
@@ -145,4 +138,12 @@ a {
 a:hover {
 	color: #63A15F;
 	border: none;
+}
+
+footer {
+	background-color: white;
+	padding: 0.5em;
+	padding-left: 2em;
+	padding-right: 2em;
+	font-size: 1em;
 }
