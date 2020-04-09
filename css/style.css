@@ -94,15 +94,6 @@ body {
   }
 }
 
-/* Container for canvas */
-.flex-container3 {
-	display: flex;
-	flex-wrap: wrap;
-	background-color: #DCDAAE;
-	overflow: auto;
-	text-overflow: clip;
-}
-
 .content {
 	background-color: #393939;
 	color: #DCDAAE;
